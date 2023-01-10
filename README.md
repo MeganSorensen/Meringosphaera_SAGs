@@ -1,10 +1,10 @@
 # Meringosphaera_SAGs
-----
+
 # A novel kleptoplastidic symbiosis revealed in the marine centrohelid Meringosphaera with evidence of genetic integration
-===========
+
 These scripts were used for the data analysis for the article: DOI
 
-------
+
 ## Section 1: SAG assembly
 1.1. Quality checks -> Fastqc.sh
 1.2. Trimmed -> TrimGalore.sh 
@@ -15,14 +15,14 @@ These scripts were used for the data analysis for the article: DOI
 1.6. Check completeness and coverage -> runBWA.sh
 1.7. Predict plastid genome -> run_getOrganelle.sh
 
---------
+
 ## Section 2: Individual gene phylogenies
 2.1. Blast searches against NCBI -> Blastn_on_NCBIint.sh
 2.2. Make a local blastdb -> makeblastdb
 2.3. Blast searches with the local databse ->  Blastn_and_get-fasta_localDB.v2.sh
 2.4. Allign hits with MAFFT, trim TRIMAL, predict tree with IQtree -> run_Mafft_TrimAL_IQtree.sh
 
-------
+
 ## Section 3: Host-encoded plastid-associated protein candidates 
 3.1. Map reads to the no-plastid contigs -> runBWA.sh
 3.2  Extract the mapped reads -> get_mapped.sh
