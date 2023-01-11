@@ -18,7 +18,7 @@ These scripts were part of the data analysis for the article: DOI
 
 ## Section 2: Individual gene phylogenies
 1. Blast searches against NCBI -> h.Blastn_on_NCBIint.sh
-2. Make a local blastdb -> i.Make_Blast_DB.sh
+2. Make a local blastdb -> i.Make_BlastDB.sh
 3. Blast searches with the local databse ->  j.Blastn_and_get-fasta_localDB.sh
 4. Allign hits with MAFFT, trim with TRIMAL, and predict tree with IQtree -> k.run_Mafft_TrimAL_IQtree.sh
 
