@@ -2,7 +2,8 @@
 
 # A novel kleptoplastidic symbiosis revealed in the marine centrohelid Meringosphaera with evidence of genetic integration
 
-These scripts were part of the data analysis for the article: DOI
+These scripts were part of the data analysis for the article: DOI  
+Many of the scripts here are based on those from a previous project (https://github.com/IoanaBrannstrom/Pcanceri_MRO) conducted by one of the co-authors
 
 
 ## Section 1: SAG assembly
@@ -10,10 +11,12 @@ These scripts were part of the data analysis for the article: DOI
 2. Trim adaptors -> b.TrimGalore.sh 
 3. Visualise GC vs kmers -> c.Katprofiles.sh  
 *(run katprofiles.sh before and after normalisation to compare, and to set target value)*
-5. Normalise coverage -> d.Run_bbnorm.sh
-6. Assemble reads -> e.runSpades.sh 
-7. Check completeness and coverage -> f.runBWA.sh
-8. Predict plastid genome -> g.run_getOrganelle.sh
+4. Normalise coverage -> d.Run_bbnorm.sh
+5. Assemble reads -> e.runSpades.sh 
+6. Check completeness and coverage -> f.runBWA.sh
+7. Predict plastid genome -> g.run_getOrganelle.sh
+8. Annotate plastid genomes with Mfannot -> at https://megasun.bch.umontreal.ca/apps/mfannot/
+9. Compare plastid annotations -> h.
 
 
 ## Section 2: Individual gene phylogenies
@@ -28,7 +31,8 @@ These scripts were part of the data analysis for the article: DOI
 2. Extract the mapped reads -> l.get_mapped.sh
 3. Coassembly of no-plastid reads based on groupings according to SAG 18S ID -> e.runSpades.sh  
    *(SAGs were clustered on >99% 18S rDNA identity, the reads from each cluser were coassembled)*
-5. Busco assess completeness -> m.Busco.sh
+4. Busco assess completeness -> m.Busco.sh
+5. Plot Busco completeness -> n.
 6. Predict ORFs with Prodigal -> n.run_Prodigal.sh
 7. Make predicted amino acid sequences a local blastdb -> o.MakeDB_protein.sh
 8. Search with blastp -> p.Blastp_and_get-fasta_localDB.sh
