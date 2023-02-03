@@ -13,7 +13,7 @@ Many of the scripts here are based on those from a previous project (https://git
 *(run katprofiles.sh before and after normalisation to compare, and to set target value)*
 4. Normalise coverage -> d.Run_bbnorm.sh
 5. Assemble reads -> e.runSpades.sh 
-6. Check completeness and coverage -> f.runBWA.sh
+6. Map the reads to the assemblies to check the completeness of the assemblies -> f.runBWA.sh
 7. Predict plastid genome -> g.run_getOrganelle.sh
 8. Annotate plastid genomes with Mfannot -> at https://megasun.bch.umontreal.ca/apps/mfannot/
 9. Compare plastid annotations -> h.Compare_plastid_annotation.R
