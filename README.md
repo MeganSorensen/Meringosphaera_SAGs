@@ -2,7 +2,8 @@
 
 # A novel kleptoplastidic symbiosis revealed in the marine centrohelid Meringosphaera with evidence of genetic integration
 
-These scripts were part of the data analysis for the article: DOI  
+These scripts were part of the data analysis for the article: "A novel kleptoplastidic symbiosis revealed in the marine centrohelid Meringosphaera with evidence of genetic integration" [DOI](https://doi.org/10.1016/j.cub.2023.07.017)  
+
 Many of the scripts here are based on those from a previous project (https://github.com/IoanaBrannstrom/Pcanceri_MRO) conducted by one of the co-authors
 
 
